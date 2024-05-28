@@ -7,12 +7,12 @@
   "engines": {
     "node": "18.x"
   },
-  "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only server.ts",
-    "start": "node build/server.js",
-    "build": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "dev": "ts-node-dev --respawn --transpile-only server.ts",
+  "start": "node build/server.js",
+  "build": "tsc && cp package*.json build/",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "author": "sagar",
   "license": "ISC",
   "dependencies": {
